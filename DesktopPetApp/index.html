@@ -2,35 +2,93 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desktop Pet App</title>
-  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      font-family: "Segoe UI", "Hiragino Sans", sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    header {
+      text-align: center;
+      background-color: #fff;
+      border-bottom: 3px solid #cc33cc;
+      padding: 30px 10px 20px;
+    }
+    header img {
+      width: 220px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #e0b3e0;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-top: 15px;
+      color: #663366;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      font-size: 1.4em;
+      color: #663366;
+      border-left: 6px solid #cc66cc;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+    a {
+      color: #6633cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      margin: 60px 0 20px;
+    }
+    .download-links {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+    .download-links a {
+      margin-right: 15px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div align="center">
-      <img src="./assets/readme/pets/hero.png" alt="Desktop Pet App Hero" width="700">
-    </div>
+    <img src="hero.png" alt="Desktop Pet App Hero">
     <h1>Desktop Pet App</h1>
     <p>AIペットアプリの公式サイトへようこそ。</p>
   </header>
 
-  <section>
+  <main>
     <h2>🐾 アプリ内容の紹介</h2>
-    <p>Desktop Pet App は、あなたの声や笑顔に反応する AI ペットアプリです。</p>
-    <p>詳細説明・スクリーンショット・更新履歴は以下のページで確認できます。</p>
-    <a href="https://github.com/usakowhity/DesktopPetApp/releases">アプリの紹介ページ（Releases）</a>
-  </section>
-
-  <section>
-    <h2>💾 ダウンロード</h2>
     <p>
+      <strong>Desktop Pet App</strong> は、あなたの声や笑顔に反応する AI ペットアプリです。<br>
+      詳細説明・スクリーンショット・更新履歴は以下のページで確認できます。
+    </p>
+    <p><a href="https://github.com/usakowhity/DesktopPetApp/releases">アプリの紹介ページ（Releases）</a></p>
+
+    <h2>📦 ダウンロード</h2>
+    <div class="download-links">
       <a href="https://github.com/usakowhity/DesktopPetApp/releases">Portable Edition（USB/SD版）</a> |
       <a href="https://github.com/usakowhity/DesktopPetApp">GitHub Edition（開発者向け）</a>
-    </p>
-  </section>
+    </div>
+  </main>
 
   <footer>
-    <p>© 2026 usakowhity</p>
+    © 2026 usakowhity
   </footer>
 </body>
 </html>
